@@ -11,6 +11,7 @@ public class MemberListPrinter {
 	private MemberDao memberDao;
 	
 	@Autowired
+	@Qualifier("printC")
 	private MemberPrinter printer;
 
 	

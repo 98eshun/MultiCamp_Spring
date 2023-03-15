@@ -1,5 +1,7 @@
 package chap04.config;
 
+import java.time.format.DateTimeFormatter;
+
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -82,6 +84,13 @@ public class AppContext {
 		
 		return versionPrinter;
 	}
+	/*
+	@Bean
+	public DateTimeFormatter dateTimeFormatter() {
+		return DateTimeFormatter.ofPattern("yyyy년 mm월 dd일");	// 사용자가 원하는 형식 지정
+	}
+	*/
+	
 }
 
 
